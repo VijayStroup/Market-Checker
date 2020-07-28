@@ -1,2 +1,2 @@
-# Market-Checker
-Auto Market Checker to notify myself if that market as dropped a threshold amount
+# MarketWatch
+Auto Market Watcher to notify myself if that market as dropped a threshold amount
