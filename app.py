@@ -38,7 +38,7 @@ if __name__ == '__main__':
     try:
         r = requests.get(url, headers=headers)
         soup = BeautifulSoup(r.text, features='lxml')
-        data = soup.find('span', {'class': re.compile(r'WlRRw IsqQVc*')})
+        data = soup.find('span', {'class': re.compile('WlRRw IsqQVc*')})
         if not data: raise ValueError
         if data.text.split(' ')[0][0] == '+' or data.text.split(' ')[0][0] == u'\u2212':
             if int(data.text.split(' ')[1].split('.')[0][-1]) >= THRESHOLD:
